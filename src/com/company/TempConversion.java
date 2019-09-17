@@ -1,8 +1,14 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class TempConversion {
+
     public static void main(String[] args) {
-        double Fahrenheit=80.0;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Type the temperature in Fahrenheit");
+        double Fahrenheit = scan.nextInt();
         double Celsius=(Fahrenheit-32)*5/9;
         System.out.println(Fahrenheit+"°F = "+Celsius+"°C");
     }
