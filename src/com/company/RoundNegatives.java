@@ -10,6 +10,9 @@ public class RoundNegatives {
         int value2=(int)(value1-0.5);
         System.out.print(value1+" rounded to a whole number is "+value2);
 
+        double v1=scan.nextDouble();
+        int v2=(int)(value1-0.5);
+        System.out.print(v1+" rounded to a whole number is "+v2);
 
     }
 }
