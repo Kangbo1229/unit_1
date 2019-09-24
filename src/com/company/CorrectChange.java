@@ -9,15 +9,16 @@ public class CorrectChange {
         int input=scan.nextInt();
         int dollars=input/100;
         int rest_of_dollars=input%100;
-        int quarters=25;
-        int rest_of_quarters=input%25;
-        int dimes=10;
-        int rest_of_dimes=input%10;
-        int nickels=5;
-        int rest_of_nickels=input%5;
-        int pennies=1;
-        int rest_of_pennies=input%1;
-        System.out.print("You have "+dollars+" dollars, ");
+        int quarters=rest_of_dollars/25;
+        int rest_of_quarters=rest_of_dollars%25;
+        int dimes=rest_of_quarters/10;
+        int rest_of_dimes=rest_of_quarters%10;
+        int nickels=rest_of_dimes/5;
+        int rest_of_nickels=rest_of_dimes%5;
+        int pennies=rest_of_nickels/1;
+        int rest_of_pennies=rest_of_nickels%1;
+        int total=rest_of_pennies;
+        System.out.print("You have "+dollars+" dollars, "+quarters+" quarters, "+dimes+" dimes, "+nickels+" nickels, and "+pennies+" pennies.");
 
     }
 }
